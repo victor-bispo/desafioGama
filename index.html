@@ -1,46 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja - Balck Friday</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
     <div class="container">
         <div class="info-promo">
-            <div class="txt">
-                <h1>BLACK <span>FRIDAY</span></h1>
-            </div>
-            <div>
-                <p>Preparamos combos com ofertas especiais para o dia 01/11!</p>
-                <img src="" alt="Caixas">
+            <h1>BLACK <span>FRIDAY</span></h1>
+            <div class="tr"></div>
+            <div class="txt-promo">
+                <p>Preparamos combos com ofertas especiais para o dia 01/11/2021</p>
+                <img src="./assests/box.png" alt="Caixas">
             </div>
         </div>
 
+        <div class="contato">
 
-        <div class="fomr-promo">
+            <div class="fomr-promo">
                 <div class="txt-form">
                     <h2>SEJA O PRIMEIRO A SABER</h2>
-                    <P>Preencha o formulario abaixo e nós avisarenos você!</P>
+                    <P>Preencha o formulario e nós avisarenos você!</P>
                 </div>
+                <div class="tr"></div>
 
                 <div id="content-form">
                     <form method="post" id="myForm" class="card-form">
-    
-                        <input type="text" name="nome" required="required" id="nome-form"
-                        class="input-form" placeholder="Nome">
-    
-                        <input type="email" name="email" required="required" id="email-form" class="input-form" placeholder="E-mail">
-    
+                        <label for="">Nome</label>
+                        <input type="text" name="nome" required="required" id="nome-form" class="input-form"
+                            placeholder="Ex: João">
+                        <label for="">E-mail</label>
+                        <input type="email" name="email" required="required" id="email-form" class="input-form"
+                            placeholder="Ex: joao@gmail.com">
                         <button type="submit" class="btn-form">Me Avise!</button>
-    
                     </form>
                 </div>
 
+            </div>
+
+            <div class="countdown">
+                <p class="prazo">ESTA OFERTA TERMINA EM:</p>
+
+                <table>
+                    <tr>
+                        <td>
+                            <div class="numero" id="dia"></div>
+                        </td>
+                        <td>
+                            <div class="numero" id="hora"></div>
+                        </td>
+                        <td>
+                            <div class="numero" id="minuto"></div>
+                        </td>
+                        <td>
+                            <div class="numero" id="segundo"></div>
+                        </td>
+                    </tr>
+                    <tr style="height:20px">
+                        <td>
+                            <p class="legenda">Dias</p>
+                        </td>
+                        <td>
+                            <p class="legenda">Horas</p>
+                        </td>
+                        <td>
+                            <p class="legenda">Min</p>
+                        </td>
+                        <td>
+                            <p class="legenda">Seg</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
         </div>
+
     </div>
     <footer></footer>
+
     <script src="./js/index.js"></script>
+    <script src="js/countdown.js"></script>
 </body>
+
 </html>
